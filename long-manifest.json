@@ -1,0 +1,302 @@
+{
+ "files": [
+  {
+   "path": "long/long_attest.py",
+   "sha256": "72c63839f78473ca2a049886f9859a6f3de0e6d0edac0012eaa9373f2dc3f650",
+   "size": 6761
+  },
+  {
+   "path": "long/long_core.py",
+   "sha256": "74351df9eb7e01123efbe65b2292ffe092d526c1fc607cdef70625289c2157ff",
+   "size": 19196
+  },
+  {
+   "path": "long/long_decode.py",
+   "sha256": "8c8b7a310bf3b153ce6d0f434fb42c425b283f936285289b63ebae2a234cf08f",
+   "size": 7216
+  },
+  {
+   "path": "long/long_engine.py",
+   "sha256": "14318f4a9eea579aaaec5491cfd9afdb2d7a3d4d1abf83a8003f12dc511a012b",
+   "size": 22485
+  },
+  {
+   "path": "long/long_hip.py",
+   "sha256": "7997b003b77fd231c85ec8ebc83f0a782eb41cd885cb85e724a8ab50918be08d",
+   "size": 5611
+  },
+  {
+   "path": "long/long_main.py",
+   "sha256": "bf3e898012b06bf6d100c6caa10de6b5430c34597d55198fded83b81c22302e2",
+   "size": 17225
+  },
+  {
+   "path": "long/npu/config.json",
+   "sha256": "b825929ff52a9b94f911df21622cde1a2edf0a71c0710ab06b0dc60c83cacbd0",
+   "size": 1332
+  },
+  {
+   "path": "long/npu/gen.py",
+   "sha256": "0d4126e9056e594c37649821767f6343c05b4d049559fd6d79fb96999d0a5bbc",
+   "size": 14539
+  },
+  {
+   "path": "long/npu/holes.json",
+   "sha256": "67f254d6ec30ddf0f6f2b20f576a7ac5de8a6b529f840aedbaa3e0d9171972f6",
+   "size": 72492
+  },
+  {
+   "path": "long/npu/holes.py",
+   "sha256": "4865491e979af9092db058dd74c1bd6535fa81f602efb920a9387c2975b84675",
+   "size": 18393
+  },
+  {
+   "path": "long/npu/layout.py",
+   "sha256": "a038b793c20a913eb497bc4493978faec8fc1cdcc288386a4ab9ec5d399e37bd",
+   "size": 5646
+  },
+  {
+   "path": "long/npu/long_pdrt.py",
+   "sha256": "9c3f8432c7d472b8b7fb86044b2046536b7fafda3e4926f7dc0edad8f67d10d9",
+   "size": 10532
+  },
+  {
+   "path": "long/npu/rope.py",
+   "sha256": "a13684b697295a8a111dbec26fe635b8d75679d94667cc125f3ff12c8ee25fa1",
+   "size": 9938
+  },
+  {
+   "path": "plamo3-long/decode/artifact-paths.json",
+   "sha256": "797d303ef61c73bbd5dbd8f8edc80b98fc2c4d0052a1590cb41f667247f20ba9",
+   "size": 3115
+  },
+  {
+   "path": "plamo3-long/decode/final.xclbin",
+   "sha256": "4da3c0617d51d62fa4df4e70cd051a506a82f8696bbfaf1c047fc37a537125af",
+   "size": 184128
+  },
+  {
+   "path": "plamo3-long/decode/pd-manifest.json",
+   "sha256": "fe645f55604693c56240a0a20f5b2b2dcea8267d8f02bc014ba115c348a84bdc",
+   "size": 3865932
+  },
+  {
+   "path": "plamo3-long/decode/rtp-map.json",
+   "sha256": "bb73d6a93e778c04ef780d197df1e5ec61c82276817c66e4f16d5756da4b779c",
+   "size": 480
+  },
+  {
+   "path": "plamo3-long/prefill/attn2.co",
+   "sha256": "eb46ffe25b4a4f9bf2860225f1a59ee60d8a4569dcd24a9a087b193f4cfc56fb",
+   "size": 13064
+  },
+  {
+   "path": "plamo3-long/prefill/attn2_full.co",
+   "sha256": "74fc62ed1c8d568811c9c78594c7e81f32e890065e1b2ce0a5fb000c85efec4b",
+   "size": 16136
+  },
+  {
+   "path": "plamo3-long/prefill/plamo3_fused.co",
+   "sha256": "0b4c1df7d8aeaf5edf8ec690368663337c790aded876256f16b5e24175eb4f21",
+   "size": 46416
+  },
+  {
+   "path": "plamo3-long/prefill/plamo3_gemm2.co",
+   "sha256": "c087de7c9da377efa304728375892f181be5d37eca155e5298eaf53ae6ca95df",
+   "size": 19968
+  },
+  {
+   "path": "plamo3-long/prefill/plamo3_prefill.co",
+   "sha256": "182f9aa232a686bc22993740bb740a35811ac2cc73de946eb97430dde72d9bfe",
+   "size": 36040
+  },
+  {
+   "path": "plamo3-long/prefill/plamo3_wmma.co",
+   "sha256": "0aa03d855315a3580a9e82b8981391865f0c50a322bf040eca9a2a88606dde0f",
+   "size": 31296
+  }
+ ],
+ "release": "plamo3-translate-xdna1-v1.1.0-long",
+ "shared": [
+  {
+   "path": "plamo3-npu-cache/ce3a15a0bde5955aa9ec901d/final.xclbin",
+   "sha256": "719dc54795c9dfedb28f86b3589b119bc5dc7fb6fed11ad6124b7ef5681d94dc",
+   "size": 208864
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-prefill-report/abi.json",
+   "sha256": "def18b486bc484310e6f4673dc1bc3a2246b7b50d1db2b11b349901a43dc395c",
+   "size": 1954
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-prefill-report/array-resources.json",
+   "sha256": "5275ebc74ff2570d7472275980f975c1a3aaf282573b2df7b10676cad776f389",
+   "size": 4440
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-prefill-report/compile.json",
+   "sha256": "3214bf47227d5ba6eee89f23decd83aa2b82041d80c19bf7840b97da88494414",
+   "size": 43488
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-prefill-report/fp-state.json",
+   "sha256": "5dffd217e8707b2327d5841d2f7651b5afc63bae924b98ae730f024db7356fc6",
+   "size": 6522
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-prefill-report/program-memory.json",
+   "sha256": "a964954ab3e17a7d33921b6ef51478c4ffe3ad7f97c6d116500b9ae0ab4adb6e",
+   "size": 84765
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/abi.json",
+   "sha256": "3fc15fef4a597183bd5b85093d58af6511d323aa56a7442d9c1bd37abcdac856",
+   "size": 1954
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/array-resources.json",
+   "sha256": "3c0b2c20105ea6136b281a0b588ee8a216dd0b13c93c6e91e031ff4e47f377aa",
+   "size": 4437
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/compile.json",
+   "sha256": "07c8b2c9d345a59dddbbfc831b261538d3ef481c1f7b0b184856751876d3e760",
+   "size": 17917
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/fp-state.json",
+   "sha256": "2096246efd546f62db1b166601ad8c5900b8fc686173e4e23c0feac55bcf8272",
+   "size": 6524
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-1.json",
+   "sha256": "8bd1d742be255b65c3b4865f5bedb23f8c98af0b4328d4e2a04013139265d742",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-10.json",
+   "sha256": "6c931e1073ee9133d844387d7085d664fa2b6de2eef8027afcf69efc1e634cb1",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-11.json",
+   "sha256": "146a34b68b44d8be8a0698dc7cdb39b97eb3d55a5a9e139fbd8ab1cb411f5b72",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-12.json",
+   "sha256": "50cd563fa1213f955f5c6bcf94b3ce690b4f73ed0cfe503f55744ddf180bae5e",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-13.json",
+   "sha256": "d7539288af3a781715a8decaadb56204a1b2fbbe7907a5384bf2b2582acc2ce0",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-14.json",
+   "sha256": "ec9876edff3b66e5a880560d784b53071f849a72425e3802d58f2eca34a75fd9",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-15.json",
+   "sha256": "0e35809fb39fbc57aef95bf5df52578bdbc9808d2b7c6f34f67425c669f3afe3",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-16.json",
+   "sha256": "e17053eb085240d6cf63ecc3ec3ff0288e7762ebf91bcad79467df681ba3e4a4",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-17.json",
+   "sha256": "7df4f743434dea989c12743bd6c5ef69e6b2c53d38bf39f171780bd8972be4f8",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-2.json",
+   "sha256": "dad7a38c1df60737ec96bde23141f7530e6c9093a957ed9ab3b97ac67b8456bf",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-3.json",
+   "sha256": "8993ea792d3b74c1860812061b21eedb51398113f8d554014be2aa71c835e04d",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-4.json",
+   "sha256": "80d047a378b04ea3b04a22137784a4470917cd4df554d00e76952e808bc32957",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-6.json",
+   "sha256": "06627da9dbc595a15de9cd6aec94b8957bd8a435dc5744fc81bf44a4844a49b7",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-7.json",
+   "sha256": "6768529014725c28f7f8183d8c384bbd24f24c29ed8ecfd1a3c5a469282c55ae",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-8.json",
+   "sha256": "d61b3ed43882ce4d85e0019869f9d8851997452351e356cd5fbdda1a4436d65d",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory-9.json",
+   "sha256": "d1f8974fddf9f7e5055d7b50d8b4701046b7944bbfcb0cd38b1c8f914e2720fc",
+   "size": 48237
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/audit/plamo-resident-report/program-memory.json",
+   "sha256": "0ccd49e86721b29cac282c158751b1f1ce569ed7776f9c3313582562b88c9f48",
+   "size": 87799
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/embedding.bin",
+   "sha256": "433f5f0a24fa0d3959fae20c2dde54be1fe1d73a8600ec53c9b8c4f614ebf8df",
+   "size": 330301440
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/initial.bin",
+   "sha256": "715bc15be33b5b60acea47c2a2da4e05c43815875beaedf7fd9b15e3c5dac360",
+   "size": 520569608
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/reference_rows.bin",
+   "sha256": "b599035bd41690c466516a307c36e32e263c1aa274d3613f863b8fc5c776eaae",
+   "size": 21504000
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/tokenizer/tokenizer-manifest.json",
+   "sha256": "dc365a9ce1694d88ab906d8f83e271b7c4164b7f746d1d044de4742ee79d2bab",
+   "size": 1258
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/tokenizer/tokenizer.marshal",
+   "sha256": "5778e36f33e63864b2dc06403649c24ac27a793956f5acfd05268a291e9a5937",
+   "size": 6258701
+  },
+  {
+   "path": "plamo3-runtime/r34-w4/transactions.bin",
+   "sha256": "7bfbc3196075a39766ee3ba93a9fdec25fb8cd84032a1d8bce9ed78731336dc8",
+   "size": 73998132
+  }
+ ],
+ "source_roots": [
+  "long"
+ ],
+ "version": 1,
+ "weights": {
+  "path": "model/model.safetensors",
+  "sha256": "7c9f0066d166c075bdbe83ada3d444e08bd7a6ee3f345f47a1f3c442aa6898c5",
+  "size": 1780709128,
+  "upstream": {
+   "file": "model.safetensors",
+   "license_url": "https://huggingface.co/pfnet/plamo-3-translate-0.8b",
+   "repo": "pfnet/plamo-3-translate-0.8b",
+   "revision": "8b4d42855622093e610ba9b90c2d2b59f8d5c15d"
+  }
+ }
+}

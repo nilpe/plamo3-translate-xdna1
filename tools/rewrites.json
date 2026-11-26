@@ -1,0 +1,68 @@
+{
+  "_comment": "Safety-net text rewrites for NON-sealed files (docs). Sealed files (listed in SHA256SUMS) are never rewritten; a rule that would touch one is an error. The release worktree is expected to be clean already; every leftover is reported by scrub_check instead of being hidden here. \"rename\" entries are prefix moves from the private repo layout to the release layout (first match wins); A2 finalises them together with public-tree.txt.",
+  "rules": [
+    {
+      "id": "private-repo-url",
+      "glob": "**/*.md",
+      "find": "github.com/nilpe/IRON-plamo3",
+      "replace": "github.com/nilpe/plamo3-translate-xdna1"
+    },
+    {
+      "id": "private-hf-url",
+      "glob": "**/*.md",
+      "find": "huggingface\\.co/n[i]lpe0555/PLaMo-3-Translate-0\\.8B-XDNA1-NPU(?![-\\w])",
+      "replace": "huggingface.co/nilpe0555/PLaMo-3-Translate-0.8B-XDNA1-NPU-runtime",
+      "regex": true
+    }
+  ],
+  "rename": [
+    {
+      "from": "experiments/plamo3_r45/translate_plamo3.",
+      "to": "translate_plamo3."
+    },
+    {
+      "from": "iron/",
+      "to": "IRON/iron/"
+    },
+    {
+      "from": "experiments/plamo3_r45/source/",
+      "to": "IRON/experiments/plamo3_r45/source/"
+    },
+    {
+      "from": "experiments/plamo3_r83/source/",
+      "to": "IRON/experiments/plamo3_r83/source/"
+    },
+    {
+      "from": "experiments/plamo3_r36/source/",
+      "to": "lib/r36/"
+    },
+    {
+      "from": "experiments/plamo3_r37/source/",
+      "to": "lib/r37/"
+    },
+    {
+      "from": "experiments/plamo3_r40/source/",
+      "to": "lib/r40/"
+    },
+    {
+      "from": "experiments/plamo3_r41/source/",
+      "to": "lib/r41/"
+    },
+    {
+      "from": "experiments/plamo3_r39/source_front/",
+      "to": "lib/r39a/"
+    },
+    {
+      "from": "experiments/plamo3_r42/source/",
+      "to": "lib/r42/"
+    },
+    {
+      "from": "experiments/plamo3_r43/source/",
+      "to": "lib/r43/"
+    },
+    {
+      "from": "experiments/plamo3_r44/source/",
+      "to": "lib/r44/"
+    }
+  ]
+}

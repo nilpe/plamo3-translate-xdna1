@@ -1,0 +1,14 @@
+[
+ {
+  "rule": "email",
+  "path": "NOTICE*",
+  "contains": "wenzel.jakob",
+  "reason": "the pybind11 BSD-3-Clause notice must be reproduced verbatim, including its author's address"
+ },
+ {
+  "rule": "email",
+  "path": "plamo3-r74/tokenizer/tokenizer.compact",
+  "contains": "TARemove@gmail",
+  "reason": "false positive: tokenizer.compact is a flat table of vocabulary pieces without separators; the match spans three adjacent pieces (ids 8669..8671: ' TA', 'Remove' and a piece that starts with the at-sign and gmail). No vocabulary token contains 'TARemove' (checked by decoding the table) and the table is proven equal to the pinned upstream tokenizer data"
+ }
+]

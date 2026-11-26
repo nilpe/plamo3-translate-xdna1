@@ -1,0 +1,84 @@
+{
+ "version": 1,
+ "recorded": "2026-11-23T05:31:00Z",
+ "translations": [
+  {
+   "text": "今日はいい天気ですね。",
+   "source_lang": "ja",
+   "target_lang": "en",
+   "tokens": [
+    1100,
+    5457,
+    48097,
+    3207,
+    1781,
+    44,
+    4566,
+    1106,
+    63,
+    16
+   ],
+   "output": "The weather is nice today, isn't it?"
+  },
+  {
+   "text": "駅までの道を教えてください。",
+   "source_lang": "ja",
+   "target_lang": "en",
+   "tokens": [
+    3549,
+    14424,
+    1087,
+    47703,
+    1087,
+    5202,
+    46,
+    16
+   ],
+   "output": "Please tell me the way to the station."
+  },
+  {
+   "text": "Thank you for your help.",
+   "source_lang": "en",
+   "target_lang": "ja",
+   "tokens": [
+    53543,
+    51353,
+    16
+   ],
+   "output": "ご協力ありがとうございます。"
+  },
+  {
+   "text": "The meeting starts at nine tomorrow morning.",
+   "source_lang": "en",
+   "target_lang": "ja",
+   "tokens": [
+    52499,
+    50104,
+    51797,
+    50100,
+    50552,
+    57,
+    50391,
+    54411,
+    50134,
+    16
+   ],
+   "output": "会議は明日の朝9時に始まります。"
+  }
+ ],
+ "w8": {
+  "tokens": [
+   1100,
+   5457,
+   48097,
+   3207,
+   1781,
+   44,
+   4566,
+   1106,
+   63,
+   16
+  ],
+  "output": "The weather is nice today, isn't it?"
+ }
+}

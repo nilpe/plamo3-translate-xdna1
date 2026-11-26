@@ -1,0 +1,7 @@
+# The only third-party packages the runtime imports. Installed by install.py with
+#   pip install --require-hashes --only-binary=:all: --no-deps --isolated -r requirements-release.txt
+# Pins from the release plan (verified on PyPI 2026-11-23). Windows x64, CPython 3.13 wheels.
+numpy==2.4.6 \
+    --hash=sha256:c4fc99836233ea196540b17ab0983aff60ed07941751930f5f4d05bc3b3b7359
+ml_dtypes==0.6.0 \
+    --hash=sha256:fb87f46b4f7ad7b5d3ad8f4b452b024bd4229d44c8ff934798c1fe656210387a

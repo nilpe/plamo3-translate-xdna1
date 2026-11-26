@@ -1,0 +1,28 @@
+{
+  "_comment": "Combinations the maintainer tested. Anything else only produces a warning (Windows/driver files are recorded, never enforced). Extended with the self-test records of external testers before the announcement.",
+  "version": 1,
+  "xrt_coreutil": [
+    "32.00.20101.3761"
+  ],
+  "npu_driver": [
+    "32.0.20101.3760"
+  ],
+  "windows_build": [
+    "10.0.26300"
+  ],
+  "python": [
+    "3.13.13"
+  ],
+  "python_cache_tag": "cpython-313",
+  "numpy": [
+    "2.4.6"
+  ],
+  "ml_dtypes": [
+    "0.6.0"
+  ],
+  "cpu_hint": [
+    "AMD Ryzen 7 8840U"
+  ],
+  "pyxrt_sha256": "4d4af5e5b2786ccfcb1c93d8a81939ac0c577e7769a9da373def62d9af525922",
+  "_pyxrt_note": "sha256 of the 527,360 byte cp313 pyxrt.pyd found at the maintainer machine on 2026-11-23 (XRT 2.21.0); the release exporter must confirm or replace it"
+}

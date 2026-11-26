@@ -1,0 +1,8 @@
+{
+ "changed_views": 23,
+ "inventory_sha256": "90c73f992504829bc12f78278de8bb0f087363b73202511928646058280ae9e7",
+ "manifest_sha256": "6ff634fc12578f5a425964e99d6902f1b8357e412d76aeb9cdcd66adafd615bf",
+ "new_format": "PLaMo-M2-port-v7",
+ "new_origins": 45,
+ "selftest": "PASS"
+}

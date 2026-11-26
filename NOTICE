@@ -1,0 +1,131 @@
+PLaMo 3 Translate on the AMD XDNA1 NPU
+Copyright (c) 2026 nilpe
+
+Built with PLaMo.
+
+This is an unofficial community project. It is not affiliated with, endorsed by, or supported by Preferred Networks,
+Inc. (PFN) or Advanced Micro Devices, Inc. (AMD). PLaMo is a model family of PFN. AMD, Ryzen, XDNA and Xilinx are
+trademarks of AMD. Windows is a trademark of Microsoft. Hugging Face is a trademark of Hugging Face, Inc.
+
+The code in this repository is licensed under the Apache License, Version 2.0 (see LICENSE). THE SOFTWARE AND THE
+MODEL FILES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
+
+No telemetry: the software does not collect or transmit any data.
+
+================================================================================
+1. PLaMo (Preferred Networks, Inc.)
+================================================================================
+
+The runtime executes PLaMo 3 Translate 0.8B (pfnet/plamo-3-translate-0.8b, revision
+8b4d42855622093e610ba9b90c2d2b59f8d5c15d), released by Preferred Networks, Inc. under the PLaMo Community License.
+The base model files are not redistributed here; the installer downloads them from Hugging Face.
+
+The following files that this project distributes are DERIVED MODELs of PLaMo 3 Translate within the meaning of the
+PLaMo Community License (Article 1(5)) and may only be used, distributed and commercialised under that licence: the
+4-bit and 8-bit weight images, the embedding copies, the precomputed tokenizer table, the speculative-decoding drafter
+(the PLaMo-port drafter package named in release.json), the pre-generated NPU command streams and the other files of the runtime payload. A copy of the
+licence is provided: LICENSE-PLaMo-en.md (English) and LICENSE-PLaMo-ja.md (Japanese original), in accordance with
+Article 4(1)(i). The text is the one published at https://plamo.preferredai.jp/info/plamo-community-license-en
+(established 2025-02-25, revised 2026-11-09, retrieved 2026-11-13); the text published by PFN is authoritative.
+
+Built with PLaMo (Article 4(1)(ii)). Model names in this project contain "PLaMo" (Article 4(1)(iii)).
+
+Users who use these files for a COMMERCIAL PURPOSE must register with PFN themselves and are subject to the licence's
+revenue condition. This project does not register anyone and grants no commercial rights.
+
+================================================================================
+2. AMD IRON (amd/IRON) - Apache License 2.0
+================================================================================
+
+Parts of the code are derived from amd/IRON, Copyright (C) 2025 Advanced Micro Devices, Inc., licensed under the
+Apache License, Version 2.0. The git history of this repository contains the upstream history of amd/IRON up to
+commit 3eebd8556df409e3f099efff3e1366d4d51eae25; one commit on top of it adds the PLaMo 3 application and the release
+tooling. Files that carry an AMD SPDX header keep it. Files under IRON/iron/applications/plamo3/ and IRON/experiments/
+were added or modified by nilpe and are marked as modified by this notice (Apache-2.0 Section 4(b)); the commit shows
+the difference to upstream. The upstream CREDITS file is retained in CREDITS.md.
+
+================================================================================
+3. mlir-aie, LLVM-AIE (Peano), AIE API - compile-time components
+================================================================================
+
+The NPU kernels and instruction streams that this project distributes in compiled form were built with:
+- mlir-aie (https://github.com/Xilinx/mlir-aie), version 1.4.5.dev119: Apache License 2.0 with LLVM Exceptions,
+  Copyright (C) Xilinx, Inc. and Advanced Micro Devices, Inc.;
+- llvm-aie / Peano (https://github.com/Xilinx/llvm-aie), version 22.0.0.2026102001+4f5df13d: Apache License 2.0 with
+  LLVM Exceptions, Copyright (c) LLVM Project contributors and Advanced Micro Devices, Inc.;
+- the AMD AIE API headers (aie_api): Apache License 2.0, Copyright (C) Advanced Micro Devices, Inc.
+These tools are not part of the installation and are not needed to run the software.
+
+================================================================================
+4. XRT and pyxrt.pyd - Apache License 2.0; pybind11 - BSD 3-Clause
+================================================================================
+
+xrt/python/pyxrt.pyd (in the payload) is a Python 3.13 binding of AMD's XRT, built from Xilinx/XRT
+(https://github.com/Xilinx/XRT), version 2.21.0, source commit 4eb1f4392a012b4e6eca759762389c612537f7c7, without
+modification, with the Microsoft Visual C++ toolchain (static CRT). XRT userspace code is "Copyright (C) 2016-2022
+Xilinx, Inc, Copyright (C) 2022-2023 Advanced Micro Devices, Inc" and licensed under the Apache License, Version 2.0;
+the XRT licence file is shipped as xrt/license/LICENSE. (The GPL-2.0 parts of the XRT licence file concern Linux kernel
+drivers, which are not part of this software.)
+
+The binding is built with pybind11 (https://github.com/pybind/pybind11), which is compiled into pyxrt.pyd:
+
+    Copyright (c) 2016 Wenzel Jakob <wenzel.jakob@epfl.ch>, All rights reserved.
+
+    Redistribution and use in source and binary forms, with or without modification, are permitted provided that the
+    following conditions are met:
+
+    1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following
+       disclaimer.
+
+    2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the
+       following disclaimer in the documentation and/or other materials provided with the distribution.
+
+    3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote
+       products derived from this software without specific prior written permission.
+
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+    SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+    SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+    WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+    USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+The NPU driver and its user-mode library (xrt_coreutil.dll, xrt-smi.exe) are AMD's, are installed by AMD's driver
+package, and are not distributed here. No Microsoft Windows component is distributed.
+
+================================================================================
+5. Packages installed from PyPI (not redistributed)
+================================================================================
+
+The installer fetches numpy (BSD 3-Clause, NumPy Developers) and ml_dtypes (Apache License 2.0, Google LLC / the
+ml_dtypes authors) from PyPI at pinned versions and hashes. They are installed into the user's own venv and are not
+part of this distribution.
+
+================================================================================
+6. Data attribution for the speculative-decoding drafter (the PLaMo-port drafter package named in release.json)
+================================================================================
+
+The drafter is a derived model of PLaMo 3 Translate: it was trained on PLaMo 3 Translate's own greedy translations
+of source sentences taken from the permissively licensed corpora below, and is therefore distributed under the PLaMo
+Community License (Article 5). Only the source side of these public corpora was used as input; no source text is
+distributed, only trained weights, token-id tables and numeric test vectors. Licences and attributions:
+
+- Tatoeba (https://tatoeba.org): "Sentences from Tatoeba, contributed by the Tatoeba community under CC BY 2.0 FR"
+  (Creative Commons Attribution 2.0 France, https://creativecommons.org/licenses/by/2.0/fr/; sentences that Tatoeba
+  lists as CC0 are CC0 1.0). The contributor of every sentence that was used is recorded per record in the attribution
+  file shipped with the drafter package: plamo3-drafter-port-v7-attribution/PLaMo-ATTRIBUTION-D20.jsonl.gz (one JSON
+  line per training request: licence, attribution string "tatoeba.org #<sentence id> (<contributor>)", source URL; no
+  text). The file is covered by SHA256SUMS and by the installer's verification.
+- OpenAssistant Conversations datasets OASST1 and OASST2, LAION / the Open-Assistant contributors, licensed under the
+  Apache License, Version 2.0 (https://huggingface.co/datasets/OpenAssistant/oasst1, .../oasst2). Message id and role
+  per record are in the attribution file; the Apache-2.0 notice applies to the portions used.
+- e-Gov Law Search (e-Gov 法令検索, https://laws.e-gov.go.jp/), Digital Agency of Japan: statutes and orders are not
+  protected by copyright (Japanese Copyright Act Article 13(i)); published under the Government Standard Terms of Use
+  2.0 (compatible with CC BY 4.0). Source: e-Gov Law Search, Digital Agency.
+- Aozora Bunko (青空文庫, https://www.aozora.gr.jp/): works in the public domain (author died in 1967 or earlier, first
+  published in 1930 or earlier); the texts were prepared by the Aozora Bunko volunteers.
+- Project Gutenberg (https://www.gutenberg.org/): English works in the public domain (author died in 1900 or earlier);
+  the Project Gutenberg licence header and footer were removed; nothing is redistributed.

@@ -1,0 +1,2 @@
+# Release tree: bound manifests hash exact bytes. Never convert line endings.
+* -text

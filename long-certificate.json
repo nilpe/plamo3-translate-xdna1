@@ -1,0 +1,11 @@
+{
+ "base": {
+  "path": "plamo3-default/r45-spec/certificate.json",
+  "release": "plamo3-translate-xdna1-v1",
+  "sha256": "b2a04ab15941ffbfc080690939dca5b7a45cc6a9ce712aacf43e8c5d253cfabc"
+ },
+ "manifest_bytes": 10051,
+ "manifest_sha256": "48c9267ae8beeaf395dbcb35606690abf62a4d7566cda4e6affd59d922da3053",
+ "release": "plamo3-translate-xdna1-v1.1.0-long",
+ "version": 1
+}

@@ -1,0 +1,33 @@
+{
+ "certificate": "plamo3-default/r45-spec/certificate.json",
+ "counts": {
+  "artifacts": 74,
+  "sources": 129,
+  "spec_origins": 73
+ },
+ "derived_from": {
+  "certificate_sha256": "68243cea90b0d11458bf48ca51b4fe8745f559a7c45883d77b9ac1b29da1a9e8",
+  "spec_manifest_payload_sha256": "d8f24815bdebb8015cedae6a9941ee18d4eae749afbe420cd47ea61d17e66112"
+ },
+ "drafter_attribution": {
+  "bytes": 40844607,
+  "files": [
+   "PLaMo-ATTRIBUTION-D20.jsonl.gz"
+  ],
+  "path": "plamo3-drafter-port-v7-attribution/PLaMo-ATTRIBUTION-D20.jsonl.gz",
+  "sha256": "97a403d23f883fa651ccc8f5b80e0b86fb68ee50ee8ea2eeae95b111c54940fb"
+ },
+ "drafter_package": "plamo3-drafter-port-v7/PLaMo-D20-M2",
+ "exporter_version": 1,
+ "package_manifest_sha256": "654c27304e16154aa3c7ad28a43a27ff63d01d67a0898c51ba895252ee41b4cc",
+ "release": "plamo3-translate-xdna1-v1",
+ "round": "H1",
+ "signing": {
+  "fingerprint": "SHA256:cdzAIU0HiCtE3KIO2DOTvv66tknD8jUPANG20hSleNU",
+  "namespace": "file",
+  "principal": "nilpe",
+  "public_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOuQcDXf30zL1peudH/0yVs74hnipYBI0isf/w6tGsEQ",
+  "scheme": "ssh",
+  "signature_file": "SHA256SUMS.sig"
+ }
+}
